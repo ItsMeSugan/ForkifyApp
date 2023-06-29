@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet" />
   <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
 
-  <link rel="stylesheet" href="src/sass/main.css">
+  <link rel="stylesheet" href="src/sass/main_source.css">
   <script type="module" defer src="src/js/controller.js"></script>
   <title>ForkifyApp Search for your Recipe</title>
 </head>
@@ -84,6 +84,55 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Search Results -->
+
+    <div class="search-results">
+      <ul class="results">
+
+        <li class="preview">
+          <a href="#23456" class="preview__link preview__link--active">
+            <figure class="preview__fig">
+              <img src="src/img/test1.jpg" alt="test" />
+            </figure>
+            <div class="preview__data">
+              <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+              <p class="preview__publisher">The Poineer Woman</p>
+              <div class="preview_-user-generated">
+                <svg>
+                  <use href="src/img/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Pagination for Sidebar -->
+
+      <div class="pagination">
+        <button class="btn--inline pagination__btn--prev">
+          <svg class="search__icon">
+            <use href="src/img/icons.svg#icon-arrow-left"></use>
+          </svg>
+          <span>Page 1</span>
+        </button>
+        <button class="btn--inline pagination__btn--next">
+          <span>Page 3</span>
+          <svg class="search__icon">
+            <use href="src/img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Copyright message in the bottom of the sidebar -->
+      <p class="copyright">
+        &copy; Copyright by
+        <a href="http://twitter.com" target="_blank" class="twitter-link">Follow us on Twitter</a>
+      </p>
+    </div>
+
   </div>
 </body>
 
