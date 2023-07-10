@@ -1,6 +1,6 @@
 import view from './view.js';
 import icons from 'url:../../img/icons.svg';
-import previewview from './previewview.js';
+import PreviewView from './previewview.js';
 
 class bookmarkView extends view {
   _parentElement = document.querySelector('.bookmarks__list');
@@ -11,7 +11,7 @@ class bookmarkView extends view {
     console.log(this._data);
 
     return this._data
-      .map(bookmark => previewview.render(bookmark, false))
+      .map(bookmark => PreviewView.render(bookmark, false))
       .join('');
   }
 }
